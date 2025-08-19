@@ -2,17 +2,27 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import userRoutes from "./routes/userRoutes.js";
+import cors from "cors";
 
-dotenv.config();
+dotenv.config(); 
+
 const app = express();
+
+app.use(cors());
 
 // Middleware
 app.use(express.json());
 
 // DB Connection
+
+if (!process.env.MONGO_URI) {
+  console.error("MONGO_URI environment variable is not defined");
+  process.exit(1);
+}
+
 mongoose
   .connect(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB connected"))
+  .then(() => console.log("MongoDB connected "))
   .catch((err) => console.log("DB connection error:", err));
 
 // Routes
