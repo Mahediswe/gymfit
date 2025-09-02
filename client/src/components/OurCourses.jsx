@@ -34,8 +34,8 @@ const OurCourses = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gray-50 py-16 px-4 max-w-7xl mx-auto">
+      <div className="">
         {/* Header */}
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
           OUR COURSES
