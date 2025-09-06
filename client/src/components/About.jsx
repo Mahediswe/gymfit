@@ -61,7 +61,7 @@ const About = () => {
           </div>
         </div>
         
-        <button className="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors duration-300">
+        <button className="mt-8 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-md transition-colors duration-300">
           READ MORE
         </button>
       </div>

@@ -14,7 +14,7 @@ import Courses from "./pages/Courses";
 import Blog from "./pages/Blog";
 import Shedule from "./pages/Shedule";
 import Contact from "./pages/Contact";
-
+import CourseDetails from './pages/CourseDetails';
 function App() {
   return (
     <Router>
@@ -25,6 +25,8 @@ function App() {
 
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<Courses />} />
+                <Route path="/courses/:id" element={<CourseDetails />} />
+
         <Route path="/blog" element={<Blog />} />
         <Route path="/schedule" element={<Shedule />} />
         <Route path="/contact" element={<Contact />} />

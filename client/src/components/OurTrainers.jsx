@@ -4,6 +4,12 @@ import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import p1 from '../assets/p1.jpg'
+import p2 from '../assets/m1.jpg'
+import p3 from '../assets/p1.jpg'
+import p4 from '../assets/m3.jpg'
+import p5 from '../assets/m4.jpg'
+import p6 from '../assets/m1.jpg'
+
 const trainers = [
   {
     id: 1,
@@ -15,31 +21,31 @@ const trainers = [
     id: 2,
     name: "Michael Lee",
     role: "Fitness Coach",
-      img: p1 
+      img: p2 
   },
   {
     id: 3,
     name: "Sophia Brown",
     role: "Yoga Instructor",
-      img: p1 
+      img: p3 
   },
   {
     id: 4,
     name: "David Smith",
     role: "Strength Coach",
-      img: p1 
+      img: p4 
   },
   {
     id: 5,
     name: "Emily Johnson",
     role: "Nutritionist",
-      img: p1 
+      img: p5 
   },
   {
     id: 6,
     name: "James White",
     role: "Cardio Trainer",
-      img: p1 
+      img: p6 
   },
 ];
 

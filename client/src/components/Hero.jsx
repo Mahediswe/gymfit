@@ -50,7 +50,7 @@ const Hero = () => {
                 </p>
                 <button
                   onClick={scrollToContact}
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-2xl shadow-2xl transform hover:scale-110 transition-all duration-300 text-lg"
+                  className="bg-green-500 hover:bg-green-700 text-white font-semibold px-10 py-4 rounded-2xl shadow-2xl transform hover:scale-110 transition-all duration-300 text-lg"
                 >
                   Contact
                 </button>

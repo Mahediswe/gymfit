@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import userRoutes from "./routes/userRoutes.js";
 import cors from "cors";
-
+import courseRoutes from './routes/courseRoutes.js'
 dotenv.config(); 
 
 const app = express();
@@ -27,6 +27,7 @@ mongoose
 
 // Routes
 app.use("/api/users", userRoutes);
+app.use("/api/courses", courseRoutes);
 
 app.get("/", (req, res) => {
   res.send("GymFit API running...");

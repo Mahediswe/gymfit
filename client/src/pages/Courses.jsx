@@ -1,10 +1,11 @@
+import React from 'react'
+import OurCourses from '../components/OurCourses'
 const Courses = () => {
   return (
-    <div className="p-10 text-center">
-      <h1 className="text-3xl font-bold">Courses</h1>
-      <p className="mt-4">This is the Courses page.</p>
+    <div>
+      <OurCourses/>
     </div>
-  );
-};
+  )
+}
 
-export default Courses;
+export default Courses

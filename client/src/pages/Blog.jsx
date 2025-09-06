@@ -1,10 +1,11 @@
+import React from 'react'
+import BlogPage from '../components/BlogPage'
 const Blog = () => {
   return (
-    <div className="p-10 text-center">
-      <h1 className="text-3xl font-bold">Blog</h1>
-      <p className="mt-4">This is the Blog page.</p>
+    <div>
+      <BlogPage/>
     </div>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog
