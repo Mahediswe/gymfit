@@ -15,6 +15,7 @@ import Blog from "./pages/Blog";
 import Shedule from "./pages/Shedule";
 import Contact from "./pages/Contact";
 import CourseDetails from './pages/CourseDetails';
+import TrainerDetails from './pages/TrainerDetails';
 function App() {
   return (
     <Router>
@@ -26,6 +27,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<Courses />} />
                 <Route path="/courses/:id" element={<CourseDetails />} />
+        <Route path="/trainers/:id" element={<TrainerDetails />} />
 
         <Route path="/blog" element={<Blog />} />
         <Route path="/schedule" element={<Shedule />} />

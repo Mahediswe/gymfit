@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 import userRoutes from "./routes/userRoutes.js";
 import cors from "cors";
 import courseRoutes from './routes/courseRoutes.js'
+import trainerRoutes from './routes/trainerRoutes.js';
+
 dotenv.config(); 
 
 const app = express();
@@ -28,6 +30,10 @@ mongoose
 // Routes
 app.use("/api/users", userRoutes);
 app.use("/api/courses", courseRoutes);
+app.use('/api/trainers', trainerRoutes);
+
+// Serve images from public folder
+// app.use('/client/public/images', express.static(path.join(path.resolve(), 'public')));
 
 app.get("/", (req, res) => {
   res.send("GymFit API running...");
