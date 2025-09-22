@@ -6,7 +6,7 @@ const TrainerDetails = () => {
   const [trainer, setTrainer] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/trainers/${id}`)
+    fetch(`https://gymfit-backend.vercel.app/api/trainers/${id}`)
       .then(res => res.json())
       .then(data => setTrainer(data))
       .catch(err => console.error(err));

@@ -1,6 +1,6 @@
 //import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/users"; // backend URL
+const API_URL = "https://gymfit-backend.vercel.app/api/users/"; // backend URL
 
 // Register
 export const registerUser = async ({ name, email, password }) => {

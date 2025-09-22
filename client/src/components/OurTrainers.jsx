@@ -206,7 +206,7 @@ const OurTrainers = () => {
   const [trainers, setTrainers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/trainers")
+    fetch("https://gymfit-backend.vercel.app/api/trainers")
       .then(res => res.json())
       .then(data => setTrainers(data))
       .catch(err => console.error(err));
@@ -218,7 +218,7 @@ const OurTrainers = () => {
     speed: 700,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3500,
     responsive: [
       { breakpoint: 1024, settings: { slidesToShow: 2 } },

@@ -8,7 +8,7 @@ const CourseDetails = () => {
   useEffect(() => {
     const fetchCourse = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/courses/${id}`);
+        const res = await fetch(`https://gymfit-backend.vercel.app/api/courses/${id}`);
         const data = await res.json();
         setCourse(data);
       } catch (err) {

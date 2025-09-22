@@ -89,7 +89,7 @@ const BlogPage = () => {
         </div>
 
         {/* Blog Posts Grid */}
-        <div className="grid grid-cols-4 md:grid-cols-2 gap-6">
+        <div className="grid  sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
           {filteredPosts.map(post => (
             <article key={post.id} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
               <img
